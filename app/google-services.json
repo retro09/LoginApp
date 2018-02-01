@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "307416190174",
+    "firebase_url": "https://my-poject-b1b3b.firebaseio.com",
+    "project_id": "my-poject-b1b3b",
+    "storage_bucket": "my-poject-b1b3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307416190174:android:919ad9abbc34c2f7",
+        "android_client_info": {
+          "package_name": "in.stupidideas.www.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307416190174-j3vt5am132941phinidhb69s0ed52g6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvse-f_Z2i1M2Lbj-ghzjMD6lMldkr2eI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
