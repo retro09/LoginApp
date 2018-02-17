@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#D0D0D0"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context="in.stupidideas.www.loginapp.MyAccount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:id="@+id/acctext"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:elevation="15dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"/>
+</LinearLayout>

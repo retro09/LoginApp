@@ -1,6 +1,7 @@
 package in.stupidideas.www.loginapp;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(MainActivity.this, "Congratulations, you have registered Sucessfully. :)", Toast.LENGTH_SHORT).show();
+                        finish();
+                        Intent login=new Intent(getApplicationContext(), Login.class);
+                        startActivity(login);
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Registration Error!", Toast.LENGTH_SHORT).show();
@@ -64,9 +68,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //FirebaseAuth
 
+        //FirebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
+        if(firebaseAuth.getCurrentUser() !=null){
+            finish();
+            Intent login=new Intent(getApplicationContext(),Login.class);
+            startActivity(login);
+        }
 
         //ProgressDialog
         progressDialog = new ProgressDialog(this);
@@ -92,11 +101,9 @@ public class MainActivity extends AppCompatActivity {
         rglogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent reg = new Intent(MainActivity.this, Login.class);
+                startActivity(reg);
             }
         });
     }
-
-
-
 }
